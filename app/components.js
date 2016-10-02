@@ -38,7 +38,7 @@
 	PlayersController.$inject = [];
 	function PlayersController() {
 		var vm=this;
-		vm.test = " Test";
+		vm.test = " PlayersController";
 		vm.$onInit = function(){
 			console.log('Players');
 		}
@@ -65,6 +65,7 @@
 		vm.test = " Test";
 		vm.$onInit = function(){
 			console.log('Player');
+			//console.log(vm.parent.test); // getting parent component controller details
 		}
 	}
 
