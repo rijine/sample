@@ -1,9 +1,12 @@
 HELLO HOME
 <div ng-repeat="team in vm.teams">
 	<team-component name="team.name">
-		<div ng-repeat="player in team.players">
+		<players-component players="team.players" >
+			<!--<div ng-repeat="player in team.players">
+			<player-component name="team" ></player-component>
+			</div>-->
 			<player-component name="player.name" ></player-component>
-		</div>
+		</players-component>
 		
 	</team-component>
 </div>
